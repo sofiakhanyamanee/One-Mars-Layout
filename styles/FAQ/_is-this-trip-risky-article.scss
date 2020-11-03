@@ -1,0 +1,65 @@
+.article__riskyTrip {
+  padding-right: 0em;
+  @media (min-width: 600px) {
+    padding-right: 4em;
+  }
+
+  &__textbox {
+    padding: 1em;
+    @media (min-width: 600px) {
+      padding: 3em 4em;
+    }
+
+    .first-paragraph,
+    .second-paragraph {
+      font-size: 13px;
+      text-align: left;
+      letter-spacing: 0.59px;
+      font-family: $oneMars-fontStyle;
+      color: $paragraph-fontColor;
+      @media (min-width: 600px) {
+        font-size: 16px;
+      }
+    }
+
+    .first-paragraph {
+      line-height: 1.44;
+      padding-bottom: 20px;
+    }
+
+    .second-paragraph {
+      font-weight: 300;
+      line-height: 1.38;
+      padding-top: 20px;
+    }
+  }
+
+  .risky__list {
+    list-style: none;
+    padding: 0.5em 0em;
+
+    &__item::before {
+      content: "\2022";
+      display: inline-block;
+      width: 0.8em;
+      font-size: 10pt;
+      color: $orange;
+      @media (min-width: 425px) {
+        width: 1.8em;
+      }
+    }
+
+    &__item {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.75;
+      letter-spacing: 0px;
+      font-family: $oneMars-fontStyle;
+      color: $paragraph-fontColor;
+      @media (min-width: 600px) {
+        font-size: 16px;
+        letter-spacing: 0.59px;
+      }
+    }
+  }
+}

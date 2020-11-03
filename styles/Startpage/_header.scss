@@ -1,0 +1,100 @@
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, #c15555c5 1%, #24020294),
+    url(../projekt-bilder/page-1/hero-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (min-width: 1255px) {
+    height: 110vh;
+  }
+
+  &::after {
+    content: "";
+    display: unset;
+    position: absolute;
+    top: 0vh;
+    left: -10vw;
+    z-index: 1;
+    width: 115%;
+    height: 80vh;
+    transform: rotate(5deg);
+    background-image: linear-gradient(200deg, #00132c 40%, rgba(21, 52, 98, 0));
+    border-radius: 0 0 50% 80%;
+    border: 1.3rem solid #436dacb4;
+    margin: -2rem;
+    @media (min-width: 1255px) {
+      background-image: linear-gradient(200deg, #00132c 40%, rgb(21, 52, 98));
+    }
+  }
+
+  .header__textbox {
+    z-index: 11;
+    padding-top: 5em;
+    margin: 0 auto;
+    @media (min-width: 1255px) {
+      padding-left: 50em;
+      padding-top: 6em;
+    }
+
+    &__heading {
+      width: 250px;
+      color: white;
+      height: 0px;
+      font-family: $oneMars-fontStyle;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 2.22px;
+      @media (min-width: 560px) {
+        width: 500px;
+        font-size: 45px;
+      }
+      @media (min-width: 1255px) {
+        width: 533px;
+        height: 93px;
+        font-size: 60px;
+      }
+    }
+
+    &__paragraph {
+      width: 250px;
+      font-family: $oneMars-fontStyle;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1.48px;
+      color: $navy-blue;
+      text-align: center;
+      @media (min-width: 560px) {
+        width: 500px;
+        text-align: center;
+      }
+      @media (min-width: 1255px) {
+        width: 533px;
+        height: 116px;
+        font-size: 40px;
+        text-align: left;
+      }
+    }
+
+    .rectangle {
+      width: 245px;
+      height: 2px;
+      background-color: $white;
+      margin: 0px 0px;
+      margin: 20px 0px 10px 0px;
+      @media (min-width: 560px) {
+        width: 490px;
+        margin: 50px 0px 10px 0px;
+      }
+      @media (min-width: 1255px) {
+        width: 431px;
+        height: 6px;
+        margin: 50px 0px 20px 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+// Heading above articles
+
+.headingText__section__heading {
+  padding: 40px 0px;
+  font-size: 36px;
+  font-family: $oneMars-fontStyle;
+  color: $navy-blue;
+  font-weight: 800;
+  letter-spacing: 1.33px;
+  text-align: center;
+}
+
+// Article headings and paragraphs
+
+.article__heading {
+  padding: 10px 0px;
+  line-height: 1.29;
+  letter-spacing: 0.89px;
+  @media (min-width: 600px) {
+    padding: 15px 0px;
+    font-size: 24px;
+  }
+}

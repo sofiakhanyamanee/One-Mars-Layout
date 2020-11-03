@@ -1,0 +1,141 @@
+main {
+  // Heading and paragraph above form
+  .headingText__section__heading {
+    width: 180px;
+    margin: 0px auto;
+    font-size: 25px;
+    padding: 30px 0px;
+    text-align: center;
+    font-family: $oneMars-fontStyle;
+    color: $orange;
+    font-weight: 800;
+    letter-spacing: 1.33px;
+    @media (min-width: 400px) {
+      width: 100%;
+    }
+    @media (min-width: 500px) {
+      font-size: 36px;
+      padding: 100px 0px 0px 0px;
+    }
+  }
+
+  .headingText__section__paragraph {
+    min-width: 200px;
+    font-family: $oneMars-fontStyle;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.89px;
+    text-align: center;
+    padding: 0em 1em 2em 1em;
+    color: $navy-blue;
+    margin: 0px auto;
+    @media (min-width: 500px) {
+      width: 509px;
+      padding-bottom: 4em;
+      padding-top: 1em;
+      font-size: 24px;
+    }
+  }
+
+  .join__form {
+    padding-bottom: 5em;
+
+    form {
+      width: 100%;
+      margin: 0px auto;
+      padding: 3em;
+      max-width: 1180px;
+      background-color: $white;
+      color: $navy-blue;
+      font-family: $oneMars-fontStyle;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.52px;
+      box-shadow: 0 4px 15px 0 rgba(185, 185, 185, 0.5);
+      @media (min-width: 550px) {
+        padding: 4.5em;
+      }
+
+      .label-box {
+        display: inline-block;
+        padding: 0em;
+        @media (min-width: 480px) {
+          padding: 1em 1.8em;
+        }
+
+        label {
+          display: block;
+          font-weight: 600;
+        }
+      }
+
+      input[type="text"] {
+        width: 200px;
+        height: 39px;
+        margin: 18px 0px;
+        padding: 1em;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 0.59px;
+        border: 1px solid $navy-blue;
+        @media (min-width: 360px) {
+          width: 250px;
+        }
+        @media (min-width: 480px) {
+          width: 339px;
+        }
+      }
+
+      input[type="date"] {
+        width: 210px;
+        height: 39px;
+        margin: 18px 0px;
+        border: 1px solid $navy-blue;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+        text-align: left;
+        padding: 1em;
+        font-weight: 100;
+        color: transparent;
+      }
+
+      textarea {
+        width: 100%;
+        margin: 18px 0px;
+        border: 1px solid $navy-blue;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+        resize: none;
+        padding: 1em;
+        font-family: $oneMars-fontStyle;
+      }
+
+      button {
+        padding: 10px 35px;
+        margin: 8px 0;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: $oneMars-fontStyle;
+        color: $navy-blue;
+        font-weight: 500;
+        letter-spacing: 0.52px;
+        border-radius: 10px;
+        border: 1px solid $navy-blue;
+        background-color: $white;
+      }
+
+      button[type="submit"]:hover {
+        color: $white;
+        background-color: $navy-blue;
+      }
+
+      .submitBtn {
+        @include flexCenter;
+      }
+    }
+  }
+}

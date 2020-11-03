@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: $white;
+  @media (min-width: 400px) {
+    background-color: $main-backgroundColor;
+  }
+
+  article {
+    background-color: $article-backgroundColor;
+  }
+
+  .article__heading {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: $oneMars-fontStyle;
+    color: $heading-fontColor;
+  }
+
+  .article__paragraph {
+    font-size: 14px;
+    line-height: 1.38;
+    letter-spacing: 0.59px;
+    font-weight: 400;
+    font-family: $oneMars-fontStyle;
+    color: $paragraph-fontColor;
+    @media (min-width: 600px) {
+      font-size: 16px;
+    }
+  }
+}

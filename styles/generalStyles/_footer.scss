@@ -1,0 +1,30 @@
+.footer {
+  background-color: $footer-bg-color;
+  min-height: 317px;
+  padding: 3em;
+
+  &__heading {
+    font-size: 30px;
+    color: $white;
+    line-height: 1.38;
+    letter-spacing: 0.59px;
+    font-weight: 600;
+    font-family: $oneMars-fontStyle;
+    padding: 40px 0px;
+    text-align: center;
+  }
+
+  &__paragraph {
+    height: 43px;
+    font-family: $oneMars-fontStyle;
+    font-size: 12px;
+    letter-spacing: 0.44px;
+    text-align: center;
+    color: $white;
+  }
+
+  &__span {
+    color: #f97c7c;
+    font-weight: 600;
+  }
+}

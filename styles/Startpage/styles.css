@@ -1,0 +1,779 @@
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
+  z-index: 1111;
+  background-color: #061b38;
+}
+
+@media (min-width: 600px) {
+  .navigation {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.navigation .navigation__linklist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  padding: 1em;
+  text-align: center;
+}
+
+@media (min-width: 350px) {
+  .navigation .navigation__linklist {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.navigation .navigation__link {
+  margin: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.59px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat";
+  -webkit-transition: ease 2000ms;
+  transition: ease 2000ms;
+}
+
+@media (min-width: 550px) {
+  .navigation .navigation__link {
+    margin: 25px;
+  }
+}
+
+@media (min-width: 600px) {
+  .navigation .navigation__link {
+    font-size: 16px;
+  }
+}
+
+.navigation .navigation__link--active {
+  text-decoration: none;
+  margin: 10px;
+  border-bottom: 3px solid #e32700;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.59px;
+  color: #ffffff;
+  font-family: "Montserrat";
+}
+
+@media (min-width: 550px) {
+  .navigation .navigation__link--active {
+    margin: 25px;
+  }
+}
+
+@media (min-width: 600px) {
+  .navigation .navigation__link--active {
+    font-size: 16px;
+  }
+}
+
+.navigation .logo {
+  width: 55px;
+  height: 30px;
+}
+
+@media (min-width: 550px) {
+  .navigation .logo {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+}
+
+@-webkit-keyframes rotatePlanet {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+            transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes rotatePlanet {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+            transform: rotateZ(-360deg);
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #c15555c5), to(#24020294)), url(../projekt-bilder/page-1/hero-1.jpg);
+  background-image: linear-gradient(to bottom, #c15555c5 1%, #24020294), url(../projekt-bilder/page-1/hero-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1255px) {
+  header {
+    height: 110vh;
+  }
+}
+
+header::after {
+  content: "";
+  display: unset;
+  position: absolute;
+  top: 0vh;
+  left: -10vw;
+  z-index: 1;
+  width: 115%;
+  height: 80vh;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  background-image: linear-gradient(200deg, #00132c 40%, rgba(21, 52, 98, 0));
+  border-radius: 0 0 50% 80%;
+  border: 1.3rem solid #436dacb4;
+  margin: -2rem;
+}
+
+@media (min-width: 1255px) {
+  header::after {
+    background-image: linear-gradient(200deg, #00132c 40%, #153462);
+  }
+}
+
+header .header__textbox {
+  z-index: 11;
+  padding-top: 5em;
+  margin: 0 auto;
+}
+
+@media (min-width: 1255px) {
+  header .header__textbox {
+    padding-left: 50em;
+    padding-top: 6em;
+  }
+}
+
+header .header__textbox__heading {
+  width: 250px;
+  color: white;
+  height: 0px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2.22px;
+}
+
+@media (min-width: 560px) {
+  header .header__textbox__heading {
+    width: 500px;
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 1255px) {
+  header .header__textbox__heading {
+    width: 533px;
+    height: 93px;
+    font-size: 60px;
+  }
+}
+
+header .header__textbox__paragraph {
+  width: 250px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.48px;
+  color: #2c4f80;
+  text-align: center;
+}
+
+@media (min-width: 560px) {
+  header .header__textbox__paragraph {
+    width: 500px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1255px) {
+  header .header__textbox__paragraph {
+    width: 533px;
+    height: 116px;
+    font-size: 40px;
+    text-align: left;
+  }
+}
+
+header .header__textbox .rectangle {
+  width: 245px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 0px 0px;
+  margin: 20px 0px 10px 0px;
+}
+
+@media (min-width: 560px) {
+  header .header__textbox .rectangle {
+    width: 490px;
+    margin: 50px 0px 10px 0px;
+  }
+}
+
+@media (min-width: 1255px) {
+  header .header__textbox .rectangle {
+    width: 431px;
+    height: 6px;
+    margin: 50px 0px 20px 0px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #ffffff;
+}
+
+@media (min-width: 400px) {
+  main {
+    background-color: #f1f1f1;
+  }
+}
+
+main article {
+  background-color: #ffffff;
+}
+
+main .article__heading {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #e32700;
+}
+
+main .article__paragraph {
+  font-size: 14px;
+  line-height: 1.38;
+  letter-spacing: 0.59px;
+  font-weight: 400;
+  font-family: "Montserrat";
+  color: #323232;
+}
+
+@media (min-width: 600px) {
+  main .article__paragraph {
+    font-size: 16px;
+  }
+}
+
+.main-container .headingText__section__heading {
+  grid-column: 1/-1;
+  width: 260px;
+  margin: 0px auto;
+  font-size: 25px;
+  padding: 30px 0px;
+  text-align: center;
+  font-family: "Montserrat";
+  color: #2c4f80;
+}
+
+@media (min-width: 400px) {
+  .main-container .headingText__section__heading {
+    width: 100%;
+  }
+}
+
+@media (min-width: 630px) {
+  .main-container .headingText__section__heading {
+    font-size: 36px;
+    padding: 70px 0px;
+  }
+}
+
+.main-container .three_articles {
+  width: 95vw;
+  margin: 0px auto;
+  padding: 1em;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .main-container .three_articles {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-container .three_articles {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 5fr 2fr;
+        grid-template-columns: 5fr 2fr;
+    -ms-grid-rows: 170px 1fr 1fr 70px;
+        grid-template-rows: 170px 1fr 1fr 70px;
+    gap: 40px;
+    width: 90vw;
+    margin: 0px auto;
+  }
+}
+
+.main-container .article__heading {
+  padding: 15px 0px;
+  text-align: center;
+  line-height: 0.92;
+  letter-spacing: 0.89px;
+}
+
+@media (min-width: 600px) {
+  .main-container .article__heading {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-container .article__heading {
+    text-align: left;
+  }
+}
+
+.main-container .article__paragraph {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .main-container .article__paragraph {
+    text-align: left;
+  }
+}
+
+.main-container .read-more-btn {
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 25px;
+  margin: 1em 0em;
+  border: 1px solid #2c4f80;
+  font-family: "Montserrat";
+  color: #2c4f80;
+  background-color: #ffffff;
+}
+
+.about_marsOne_article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+@media (min-width: 950px) {
+  .about_marsOne_article {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.about_marsOne_article__imgbox {
+  width: 100%;
+  margin: 0;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (min-width: 950px) {
+  .about_marsOne_article__imgbox {
+    width: 48%;
+  }
+}
+
+@media (min-width: 950px) {
+  .about_marsOne_article__imgbox {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
+.about_marsOne_article__imgbox img {
+  width: 100%;
+}
+
+.about_marsOne_article__textbox {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1.5em;
+}
+
+@media (min-width: 950px) {
+  .about_marsOne_article__textbox {
+    width: 52%;
+    padding: 0em 2em;
+  }
+}
+
+@media (min-width: 1080px) {
+  .about_marsOne_article__textbox {
+    padding: 0em 6em;
+  }
+}
+
+.about_marsOne_article__textbox__heading {
+  font-size: 20px;
+  padding: 20px 0px;
+  text-align: center;
+  font-family: "Montserrat";
+  color: #e32700;
+}
+
+@media (min-width: 950px) {
+  .about_marsOne_article__textbox__heading {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about_marsOne_article__textbox__heading {
+    padding: 40px 0px;
+    text-align: left;
+  }
+}
+
+.about_marsOne_article__textbox__paragraph {
+  font-size: 15px;
+  letter-spacing: 0.67px;
+  line-height: 1.44;
+  text-align: center;
+  font-family: "Montserrat";
+  color: #323232;
+}
+
+@media (min-width: 950px) {
+  .about_marsOne_article__textbox__paragraph {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about_marsOne_article__textbox__paragraph {
+    text-align: left;
+    font-size: 18px;
+  }
+}
+
+.about_marsOne_article__textbox__span {
+  letter-spacing: 0.67px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  color: #e32700;
+}
+
+.article__whyMars {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+}
+
+@media (min-width: 1200px) {
+  .article__whyMars {
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+}
+
+.article__whyMars__img {
+  background-image: url(../projekt-bilder/page-1/planet-red.png);
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: ease-in 2000ms;
+  transition: ease-in 2000ms;
+  -webkit-animation: rotatePlanet 50s infinite linear;
+          animation: rotatePlanet 50s infinite linear;
+}
+
+@media (min-width: 400px) {
+  .article__whyMars__img {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
+@media (min-width: 500px) {
+  .article__whyMars__img {
+    background-size: 25%;
+  }
+}
+
+@media (min-width: 800px) {
+  .article__whyMars__img {
+    background-size: 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .article__whyMars__img {
+    background-size: 45%;
+  }
+}
+
+.article__whyMars__textbox {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0px 20px;
+}
+
+@media (min-width: 1200px) {
+  .article__whyMars__textbox {
+    padding: 0px 60px;
+  }
+}
+
+@keyframes rotatePlanet {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+            transform: rotateZ(-360deg);
+  }
+}
+
+.article__substainableSun {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / span 2;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+}
+
+@media (min-width: 1200px) {
+  .article__substainableSun {
+    -ms-grid-rows: 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
+    padding: 45px;
+    margin: 0px auto;
+  }
+}
+
+.article__substainableSun__img {
+  background-image: url(../projekt-bilder/page-1/solar.svg);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: ease-in 2000ms;
+  transition: ease-in 2000ms;
+  -webkit-animation: rotatePlanet 200s infinite linear;
+          animation: rotatePlanet 200s infinite linear;
+}
+
+@media (min-width: 400px) {
+  .article__substainableSun__img {
+    background-size: 50%;
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
+@media (min-width: 680px) {
+  .article__substainableSun__img {
+    background-size: 40%;
+  }
+}
+
+@media (min-width: 760px) {
+  .article__substainableSun__img {
+    background-size: 20%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .article__substainableSun__img {
+    background-size: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .article__substainableSun__img {
+    background-size: 70%;
+  }
+}
+
+.article__substainableSun__textbox {
+  padding-top: 0px;
+}
+
+@media (min-width: 1200px) {
+  .article__substainableSun__textbox {
+    padding-top: 20px;
+  }
+}
+
+@keyframes rotatePlanet {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg);
+            transform: rotateZ(-360deg);
+  }
+}
+
+.article__justMoveIn {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+          box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+}
+
+@media (min-width: 1200px) {
+  .article__justMoveIn {
+    -ms-grid-columns: 2fr 3fr;
+        grid-template-columns: 2fr 3fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+}
+
+.article__justMoveIn__img {
+  background-image: url(../projekt-bilder/page-1/base.jpg);
+  background-size: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: ease-in-out 2000ms;
+  transition: ease-in-out 2000ms;
+}
+
+.article__justMoveIn__textbox {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0px 20px;
+}
+
+@media (min-width: 1200px) {
+  .article__justMoveIn__textbox {
+    padding: 0px 60px;
+  }
+}
+
+.footer {
+  background-color: #2c4f80;
+  min-height: 317px;
+  padding: 3em;
+}
+
+.footer__heading {
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 1.38;
+  letter-spacing: 0.59px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  padding: 40px 0px;
+  text-align: center;
+}
+
+.footer__paragraph {
+  height: 43px;
+  font-family: "Montserrat";
+  font-size: 12px;
+  letter-spacing: 0.44px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer__span {
+  color: #f97c7c;
+  font-weight: 600;
+}
+/*# sourceMappingURL=styles.css.map */

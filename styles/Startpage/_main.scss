@@ -1,0 +1,79 @@
+.main-container {
+  // Heading section
+
+  .headingText__section__heading {
+    grid-column: 1/-1;
+    width: 260px;
+    margin: 0px auto;
+    font-size: 25px;
+    padding: 30px 0px;
+    text-align: center;
+    font-family: $oneMars-fontStyle;
+    color: $navy-blue;
+    @media (min-width: 400px) {
+      width: 100%;
+    }
+    @media (min-width: 630px) {
+      font-size: 36px;
+      padding: 70px 0px;
+    }
+  }
+
+  // Section with three articles
+
+  .three_articles {
+    width: 95vw;
+    margin: 0px auto;
+    padding: 1em;
+    text-align: center;
+    @media (min-width: 1200px) {
+      text-align: left;
+    }
+
+    @media (min-width: 1200px) {
+      display: grid;
+      grid-template-columns: 5fr 2fr;
+      grid-template-rows: 170px 1fr 1fr 70px;
+      gap: 40px;
+      width: 90vw;
+      margin: 0px auto;
+    }
+  }
+
+  // Article heading & paragraph
+
+  .article__heading {
+    padding: 15px 0px;
+    text-align: center;
+    line-height: 0.92;
+    letter-spacing: 0.89px;
+    @media (min-width: 600px) {
+      font-size: 24px;
+    }
+    @media (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+  .article__paragraph {
+    padding-bottom: 20px;
+    text-align: center;
+    @media (min-width: 1200px) {
+      text-align: left;
+    }
+  }
+
+  // ReadMore-buttons
+
+  .read-more-btn {
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 25px;
+    margin: 1em 0em;
+    border: 1px solid $navy-blue;
+    font-family: $oneMars-fontStyle;
+    color: $navy-blue;
+    background-color: $white;
+  }
+}

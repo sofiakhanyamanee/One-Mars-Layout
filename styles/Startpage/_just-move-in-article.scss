@@ -1,0 +1,29 @@
+.article__justMoveIn {
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: $article-backgroundColor;
+  box-shadow: $box-shadow;
+  @media (min-width: 1200px) {
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+  }
+
+  &__img {
+    background-image: url(../projekt-bilder/page-1/base.jpg);
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: ease-in-out 2000ms;
+  }
+
+  &__textbox {
+    align-self: center;
+    padding: 0px 20px;
+    @media (min-width: 1200px) {
+      padding: 0px 60px;
+    }
+  }
+}

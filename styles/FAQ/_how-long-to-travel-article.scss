@@ -1,0 +1,100 @@
+.article__howLongToTravel {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  }
+
+  &__textbox {
+    padding: 1em;
+    @media (min-width: 600px) {
+      padding: 5em;
+    }
+  }
+
+  &__img {
+    display: grid;
+    grid: 1fr/1fr;
+    place-items: center;
+    order: 1;
+    min-height: 380px;
+    background-image: radial-gradient(circle at 50% 39%, #072142, #00132c 101%);
+    @media (min-width: 1200px) {
+      order: 0;
+    }
+
+    %center {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .sun {
+      @extend %center;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      animation: rotatePlanet 25s infinite linear;
+
+      .sun_img {
+        width: 50px;
+        height: 50px;
+        @extend %center;
+      }
+    }
+
+    .orb {
+      @extend %center;
+      border-radius: 100%;
+      border: 1px dashed grey;
+      animation: rotatePlanet 25s infinite linear;
+    }
+
+    .planet {
+      border-radius: 100%;
+      position: absolute;
+      @extend %center;
+      left: 50%;
+      top: -10px;
+      animation: rotatePlanet 25s infinite linear;
+    }
+
+    .earth {
+      &.orb {
+        width: 170px;
+        height: 170px;
+        animation-duration: 11s;
+      }
+
+      .planet {
+        width: 33px;
+        height: 33px;
+        animation-duration: 11s;
+      }
+    }
+
+    .mars {
+      &.orb {
+        width: 320px;
+        height: 320px;
+        animation-duration: 9s;
+      }
+
+      .planet {
+        width: 30px;
+        height: 30px;
+        animation-duration: 9s;
+      }
+    }
+  }
+}
+
+@keyframes rotatePlanet {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
